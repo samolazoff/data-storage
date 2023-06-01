@@ -14,3 +14,8 @@
 ## Data Base
 
 1. MoongoDB
+
+## Security
+
+1. bcryptjs
+2. express-validator

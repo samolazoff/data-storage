@@ -1,12 +1,11 @@
-import {Shema, model} from 'mongoose';
+import mongoose from 'mongoose';
 
-const User = new Shema({
+const User = new mongoose.Schema({
     email: {type: String, required: true, unique: true},
     password: {type: String, required: true},
     diskSpace: {type: Number, required: true, default: 1024**3*10},
     usedSpace: {type: Number, required: true, default: 0},
     avatar: {type: String},
-    files: [{type: ObjectId, ref: 'File'}]
 });
 
-module.exports = model('User', User);
+export default mongoose.model('User', User)

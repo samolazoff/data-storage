@@ -4,4 +4,4 @@ const File = new Shema({
 
 });
 
-module.exports = model('File', File);
+export default model('File', File);
