@@ -10,7 +10,7 @@
 2. Nodemon
 3. Config
 4. Mongose
-5. bodyParser
+5. BodyParser
 
 ## Data Base:
 
@@ -18,5 +18,6 @@
 
 ## Security:
 
-1. bcryptjs
-2. express-validator
+1. Bcryptjs
+2. Express-validator
+3. Jsonwebtoken
