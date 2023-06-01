@@ -4,18 +4,19 @@
 
 1. Creaate react app
 
-## Server
+## Server:
 
-1. Exppress
+1. Express
 2. Nodemon
 3. Config
 4. Mongose
+5. bodyParser
 
-## Data Base
+## Data Base:
 
-1. MoongoDB
+1. MongoDB
 
-## Security
+## Security:
 
 1. bcryptjs
 2. express-validator

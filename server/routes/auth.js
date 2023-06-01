@@ -15,17 +15,15 @@ router.post('/registration',
     async (req, res) => {
     try {
         const errorValidation = validationResult(req);
-        
-        if(errorValidation.isEmpty()){
-            return  res.status(400).json({message: "Uncorrect request", errors})
+        if(!errorValidation.isEmpty()){
+            return  res.json({message: "Uncorrect request", errors})
         };
-
         const {email, password} = req.body;
         const candidate = await User.findOne({email});
         if(candidate) {
-            return res.status(400).json({message: "User with this email already exist"})
+            return res.json({message: "User with this email already exist"})
         }
-        const hashPassword = await bcrypt.hash(password, 15);
+        const hashPassword = await bcrypt.hash(password, 8);
         const user = new User({email, password: hashPassword});
         await user.save();
         return res.json({message: "User was created"})
