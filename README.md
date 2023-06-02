@@ -7,6 +7,7 @@
 3. React-redux
 4. Redux-thunk
 5. Redux-devtools-extension
+6. React-router-dom
 
 ## Server:
 
