@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar';
 import Registration from './components/registration/Registration';
 import Login from './components/login/Login';
 import Home from './components/home/Home';
+import AppFooter from './components/footer/AppFooter';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='login' element={<Login></Login>}></Route>
       </Routes>
       </main>
+      <AppFooter></AppFooter>
     </BrowserRouter>
   );
 }
