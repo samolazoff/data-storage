@@ -5,7 +5,7 @@ import './home.sass'
 const Home = () => {
     return (
         <section className='home'>
-            <h2>Home page</h2>
+            <h2 className='title-block'>Home page</h2>
         </section>
     );
 };
